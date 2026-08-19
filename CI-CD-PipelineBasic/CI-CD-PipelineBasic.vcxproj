@@ -140,11 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CI-CD-PipelineBasic.cpp" />
-    <ClCompile Include="Tests.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\Tests.vcxproj" />
-    <None Include="buildAndTest.yml" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Greetings.h" />

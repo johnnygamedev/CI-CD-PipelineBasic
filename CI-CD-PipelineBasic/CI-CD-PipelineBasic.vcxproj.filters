@@ -13,33 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\.github">
-      <UniqueIdentifier>{ce9cbbed-a76e-4bd5-a5cd-68fab2770f63}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\.github\workflows">
-      <UniqueIdentifier>{f309e489-53a3-4b35-a04b-0e69891b6e15}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\CI-CD-PipelineBasic">
       <UniqueIdentifier>{5dd53fa1-9308-4ba3-b2be-ac9f03ea7110}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Tests">
-      <UniqueIdentifier>{ee687378-fb8b-4e4c-962a-2d79360accaf}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="buildAndTest.yml">
-      <Filter>Source Files\.github\workflows</Filter>
-    </None>
-    <None Include="..\..\..\Tests.vcxproj">
-      <Filter>Source Files\Tests</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CI-CD-PipelineBasic.cpp">
       <Filter>Source Files\CI-CD-PipelineBasic</Filter>
-    </ClCompile>
-    <ClCompile Include="Tests.cpp">
-      <Filter>Source Files\Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
