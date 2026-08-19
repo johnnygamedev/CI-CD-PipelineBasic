@@ -15,13 +15,12 @@ jobs:
   build-and-test:
     runs-on: windows-latest
  
-    steps:
-    
-name: Checkout repository
+steps:
+  - name: Checkout repository
     uses: actions/checkout@v4
 
-name: Add MSBuild to PATH
-uses: microsoft/setup-msbuild@v2
+  - name: Add MSBuild to PATH
+    uses: microsoft/setup-msbuild@v2
 
 name: Restore NuGet packages
 run: nuget restore ${{ env.SOLUTION_FILE_PATH }}
