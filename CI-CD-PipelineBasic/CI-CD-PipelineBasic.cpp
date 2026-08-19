@@ -3,10 +3,11 @@
  
 #include <iostream>
 #include "Greetings.h"
+#include <string>
  
 int main()
 {
-    std::cout << getGreeting();
+    std::cout << "kaboom" << std::endl;
 }
 
 //new 
