@@ -27,7 +27,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="buidlAndTest.yml">
+    <None Include="buildAndTest.yml">
       <Filter>Source Files\.github\workflows</Filter>
     </None>
     <None Include="..\..\..\Tests.vcxproj">
