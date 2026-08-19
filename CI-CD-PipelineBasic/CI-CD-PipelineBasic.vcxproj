@@ -140,6 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CI-CD-PipelineBasic.cpp" />
+    <ClCompile Include="Tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Tests.vcxproj" />
+    <None Include="buidlAndTest.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Greetings.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

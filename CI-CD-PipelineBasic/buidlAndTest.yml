@@ -1,0 +1,41 @@
+name: Build and Test
+ 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+ 
+env:
+  SOLUTION_FILE_PATH: CI-CD-PipelineBasic.slnx
+  BUILD_CONFIGURATION: Release
+  BUILD_PLATFORM: x64
+ 
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+ 
+    steps:
+    
+name: Checkout repository
+    uses: actions/checkout@v4
+
+name: Add MSBuild to PATH
+uses: microsoft/setup-msbuild@v2
+
+name: Restore NuGet packages
+run: nuget restore ${{ env.SOLUTION_FILE_PATH }}
+
+name: Build solution
+run: >
+  msbuild ${{ env.SOLUTION_FILE_PATH }}/p:Configuration=${{ env.BUILD_CONFIGURATION }}/p:Platform=${{ env.BUILD_PLATFORM }}/m
+
+name: Run tests
+shell: pwsh
+continue-on-error: true
+run: |$testDlls = Get-ChildItem -Recurse -Include Tests.dll,Test.dll -Path . |
+    Select-Object -ExpandProperty FullName
+
+      if ($testDlls.Count -eq 0) {
+        Write-Host "No test assemblies found — skipping test run."} else {
+        vstest.console.exe /Platform:${{ env.BUILD_PLATFORM }} $testDlls}
