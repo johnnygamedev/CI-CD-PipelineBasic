@@ -7,7 +7,8 @@
  
 int main()
 {
-    std::cout << "kaboom" << std::endl;
+    std::cout << "kaboom" << std::endl; 
+    std::cout << "Keep the git hub green - caus i worked at 6am and i am tired..." << std::endl;
 }
 
 //new 
