@@ -36,11 +36,10 @@ jobs:
         shell: pwsh
         continue-on-error: true
         run: |
-         $testDlls = Get-ChildItem -Recurse -Include Tests.exe,Test.exe -Path . |
+          $testExes = Get-ChildItem -Recurse -Include Tests.exe,Test.exe -Path . |
             Select-Object -ExpandProperty FullName
-
-          if ($testDlls.Count -eq 0) {
+          if ($testExes.Count -eq 0) {
             Write-Host "No test assemblies found - skipping test run."
           } else {
-            vstest.console.exe /Platform:${{ env.BUILD_PLATFORM }} $testDlls
+            foreach ($test in $testExes) { & $test }
           }
