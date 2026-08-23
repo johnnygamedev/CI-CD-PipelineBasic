@@ -7,9 +7,6 @@
   <Folder Name="/.github/workflow/">
     <File Path=".github/workflows/buildAndTest.yml" />
   </Folder>
-  <Folder Name="/Tests/">
-    <File Path="Tests/Tests.cpp" />
-    <File Path="Tests/Tests.vcxproj" />
-  </Folder>
   <Project Path="CI-CD-PipelineBasic/CI-CD-PipelineBasic.vcxproj" Id="65f3807e-2b25-40e8-9d36-e7314e2e4f7e" />
+  <Project Path="Tests/Tests.vcxproj" Id="f4369583-f3c3-460f-bd78-3082d90a0dba" />
 </Solution>
