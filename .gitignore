@@ -6,8 +6,7 @@
 *.db-wal
 *.opendb
 *.ipch
-x64/
-Debug/
-Release/
+x64/Debug/
+x64/Release/
 *.obj
 *.pch
