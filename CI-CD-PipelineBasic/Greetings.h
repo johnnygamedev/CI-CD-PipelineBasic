@@ -3,5 +3,5 @@
 
 inline std::string getGreeting()
 {
-    return "Hello World!\n";
+    return "kaboom world!\n";
 }
