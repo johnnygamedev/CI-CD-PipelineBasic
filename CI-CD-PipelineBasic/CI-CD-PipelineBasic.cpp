@@ -7,7 +7,7 @@
  
 int main()
 {
-    std::cout << "kaboom" << std::endl; 
+    std::cout << "kabom" << std::endl; 
     
 }
 
