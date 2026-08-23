@@ -36,7 +36,7 @@ jobs:
         shell: pwsh
         continue-on-error: true
         run: |
-          $testDlls = Get-ChildItem -Recurse -Include Tests.dll,Test.dll -Path . |
+         $testDlls = Get-ChildItem -Recurse -Include Tests.exe,Test.exe -Path . |
             Select-Object -ExpandProperty FullName
 
           if ($testDlls.Count -eq 0) {
