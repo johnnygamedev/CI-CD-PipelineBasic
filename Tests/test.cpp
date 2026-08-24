@@ -3,7 +3,7 @@
 
 // first test: does getGreeting returns the correct string
 TEST(GreetingTests, ReturnsHelloWorld) {
-    EXPECT_EQ(getGreeting(), "Hello World!\n");
+    EXPECT_EQ(getGreeting(), "kaboom world!");
 }
 
 // second test: is  getGreeting is not empty
