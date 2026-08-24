@@ -7,8 +7,7 @@
  
 int main()
 {
-    
-    //nothing burger
+	std::cout << getGreeting();
 }
 
 //new 

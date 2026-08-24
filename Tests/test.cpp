@@ -2,7 +2,7 @@
 #include "../CI-CD-PipelineBasic/Greetings.h"
 
 // first test: does getGreeting returns the correct string
-TEST(GreetingTests, ReturnsHelloWorld) {
+TEST(GreetingTests, ReturnsKaboomWorld) {
     EXPECT_EQ(getGreeting(), "kaboom world!");
 }
 
