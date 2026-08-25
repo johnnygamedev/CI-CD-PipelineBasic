@@ -8,6 +8,7 @@
 int main()
 {
 	std::cout << getGreeting();
+	std::cout << "Hello";
 }
 
 //new 
