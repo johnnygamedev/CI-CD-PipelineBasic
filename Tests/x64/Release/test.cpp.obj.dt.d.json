@@ -165,7 +165,7 @@
             "d:\\c++ journey\\ci-cd-pipelinebasic\\packages\\microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\\build\\native\\include\\gtest\\gtest-typed-test.h",
             "d:\\c++ journey\\ci-cd-pipelinebasic\\packages\\microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\\build\\native\\include\\gtest\\gtest_pred_impl.h",
             "d:\\c++ journey\\ci-cd-pipelinebasic\\packages\\microsoft.googletest.v140.windesktop.msvcstl.dyn.rt-dyn.1.8.1.8\\build\\native\\include\\gtest\\gtest.h",
-            "d:\\c++ journey\\ci-cd-pipelinebasic\\ci-cd-pipelinebasic\\greetings.h"
+            "d:\\c++ journey\\ci-cd-pipelinebasic\\ci-cd-pipelinebasic\\mathutils.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

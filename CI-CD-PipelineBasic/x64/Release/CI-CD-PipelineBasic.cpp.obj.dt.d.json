@@ -128,8 +128,7 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
-            "d:\\c++ journey\\ci-cd-pipelinebasic\\ci-cd-pipelinebasic\\greetings.h",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string"
+            "d:\\c++ journey\\ci-cd-pipelinebasic\\ci-cd-pipelinebasic\\mathutils.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
