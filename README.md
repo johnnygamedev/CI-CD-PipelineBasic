@@ -1,31 +1,31 @@
-# C++ / CI-CD Pipeline & MathUtils Library
-A custom C++ unit testing pipeline built to demonstrate automated CI/CD practices in game engine development. Instead of using generic "Hello World" templates, I built a lightweight MathUtils header-only library containing fundamental game dev operations (clamping, linear interpolation, and 2D vector math) fully integrated with GoogleTest and automated GitHub Actions workflows.
+# MathUtils & C++ CI/CD Pipeline
+A basic C++ project where I replaced a standard "Hello World" template with a custom MathUtils library and set up an automated CI/CD pipeline using GitHub Actions. I wanted to learn how unit testing and automated builds actually work in game development, so I wrote some essential engine math functions and hooked them up to GoogleTest.
 
 ![Build Status](https://github.com/johnnygamedev/CI-CD-PipelineBasic/actions/workflows/buildAndTest.yml/badge.svg)
 
 
 
 # Key Features
-Header-Only Design: Built MathUtils.h as a header-only utility to streamline translation units, avoiding linking overhead across main execution and test runners.
+Header-Only Math Library: Put everything inside MathUtils.h using inline functions so it's super easy to include across different files without getting linker errors.
 
-Game Dev Math Suite: Implemented standard utility functions including clamp (bounding values like health/UI), lerp (camera/color interpolation), and a full Vector2 struct (addition, subtraction, length, dot product).
+Game Dev Functions: Built clamp (keeping values like health in range), lerp (smooth camera/movement transitions), and a Vector2 struct with add, subtract, dot, and length methods.
 
-Automated CI/CD Pipeline: Configured a custom GitHub Actions workflow (buildAndTest.yml) that triggers on every push or pull request to compile the project via MSBuild and execute the unit test binary automatically.
+Automated GitHub Actions: Set up a workflow file that automatically builds the project using MSBuild whenever I push changes or open a pull request.
 
-GoogleTest Integration: Structured isolated test suites to validate numeric bounds, floating-point precision tolerances (EXPECT_NEAR), and vector algebra operations.
+GoogleTest Suite: Wrote unit tests in test.cpp using EXPECT_EQ and EXPECT_NEAR to make sure all the vector math and floating-point math give accurate results.
 
-Direct Execution Verification: Main application entry point verifies runtime operations, providing immediate feedback alongside pipeline assertions.
+Quick Main Test: Modified main.cpp to run a few quick calculations so I can manually check that everything prints out right.
 
 # Tech Used
-Language: C++ (C++17)
+Language: C++
 
-Build System: MSBuild, Visual Studio Solution (.sln)
+Testing: GoogleTest
 
-Testing Framework: GoogleTest (gtest)
+Build System: Visual Studio / MSBuild
 
 CI/CD: GitHub Actions
 
-# Pipeline & Usage Flow
-Automated Builds: Pushing to main triggers MSBuild to restore packages and compile the Release configuration on a windows-latest runner.
+# How It Works
+Pushing Code: Every time I push to the main branch, GitHub Actions spins up a Windows environment and runs NuGet restore.
 
-Test Discovery: PowerShell runner scans output paths, isolates test binaries, executes all assertions, and returns exit codes to enforce build health.
+Running Tests: The pipeline compiles the solution in Release mode, finds the test executable, runs all the GoogleTest assertions, and passes or fails the build automatically.
