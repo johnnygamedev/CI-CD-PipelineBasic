@@ -4,7 +4,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/.github/" />
-  <Folder Name="/.github/workflow/">
+  <Folder Name="/.github/workflows/">
     <File Path=".github/workflows/buildAndTest.yml" />
   </Folder>
   <Project Path="CI-CD-PipelineBasic/CI-CD-PipelineBasic.vcxproj" Id="65f3807e-2b25-40e8-9d36-e7314e2e4f7e" />
