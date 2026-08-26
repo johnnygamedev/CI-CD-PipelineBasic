@@ -142,7 +142,7 @@
     <ClCompile Include="CI-CD-PipelineBasic.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Greetings.h" />
+    <ClInclude Include="MathUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

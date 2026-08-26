@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Greetings.h">
+    <ClInclude Include="MathUtils.h">
       <Filter>Source Files\CI-CD-PipelineBasic</Filter>
     </ClInclude>
   </ItemGroup>
